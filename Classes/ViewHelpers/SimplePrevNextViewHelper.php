@@ -111,6 +111,8 @@ class SimplePrevNextViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstract
 			case 1:
 				$tmp['next'] = $result[0];
 				break;
+			case 0:
+				break;	
 			default:
 				throw new \UnexpectedValueException(sprintf('Unexpected count of "%s" which is not implemented!', $count));
 		}
